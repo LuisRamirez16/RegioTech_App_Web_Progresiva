@@ -1,0 +1,18 @@
+#regla para evitar uso de .php 
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(,*)$ $1.php
+
+
+
+RewriteRule ^login$ vista/login.php [L]
+RewriteRule ^home$ vista/home.php [L]
+RewriteRule ^productos$ vista/productos.php [L]
+RewriteRule ^tablas$ vista/tablas.php [L]
+RewriteRule ^reporte$ vista/reporte.php [L]
+RewriteRule ^venta$ vista/venta.php [L]
+RewriteRule ^mostrarCarrito$ vista/mostrarCarrito.php [L]
+RewriteRule ^pagar$ vista/pagar.php [L]
+RewriteRule ^historial$ vista/historial.php [L]
+RewriteRule ^reporte$ vista/reporte.php [L]
